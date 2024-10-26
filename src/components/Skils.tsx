@@ -39,21 +39,21 @@ const Skills: React.FC = () => {
   ];
 
   return (
-    <div>
-      <div id="Skills" className="bg-gray-800 px-4 py-16 text-center">
+    <div className="">
+      <div id="Skills" className="bg-gray-800 px-4 py-12 text-center md:px-40">
         <h2 className="mb-6 text-3xl font-bold text-white">
           My <span className="text-yellow-400">Skills</span>
         </h2>
-        <p className="mb-12 text-gray-400">
+        <p className="mb-16 text-gray-400">
           A collection of skills I have developed through my experiences and
           education.
         </p>
 
-        <div className="grid grid-cols-1 gap-8 hover:scale-105 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-10 hover:scale-105 sm:grid-cols-2 lg:grid-cols-3">
           {skills.map((skill, index) => (
             <div
               key={index}
-              className="overflow-hidden rounded-lg bg-gray-900 p-6 shadow-lg transition-shadow duration-300 hover:shadow-xl"
+              className="max-w-96 overflow-hidden rounded-lg bg-gray-900 p-6 shadow-lg transition-shadow duration-300 hover:shadow-xl"
             >
               <h3 className="mb-2 text-xl font-semibold text-yellow-400">
                 {skill.title}

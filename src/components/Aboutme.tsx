@@ -1,20 +1,22 @@
+import konstruksi from "../assets/konstruksi.jpeg";
+
 const AboutMe: React.FC = () => {
   return (
     <div
       id="AboutMe"
-      className="grid grid-cols-1 gap-12 bg-gray-800 px-4 py-20 text-white md:grid-cols-2 md:px-8 md:py-24 lg:px-16"
+      className="lg:px-25 md:py-25 grid grid-cols-1 gap-20 bg-gray-800 px-4 py-40 text-white md:grid-cols-2 md:px-40"
     >
       {/* Image Section */}
       <div className="relative h-80 w-full overflow-hidden rounded-2xl shadow-lg md:h-[500px]">
         <img
-          src="https://media.licdn.com/dms/image/v2/D562DAQE2Vw0DnfudLQ/profile-treasury-image-shrink_8192_8192/profile-treasury-image-shrink_8192_8192/0/1729340865889?e=1730397600&v=beta&t=l2cQnawDHx3OhqWoc51thCBLuf8CN5-2sJqLNNoXTWc"
+          src={konstruksi}
           alt="Background Banner"
           className="absolute inset-0 h-full w-full rounded-xl object-cover transition-transform duration-300 ease-in-out hover:scale-105"
         />
       </div>
 
       {/* Content Section */}
-      <div className="b flex border-collapse flex-col gap-6 border-amber-400 text-center md:text-left">
+      <div className="flex border-collapse flex-col gap-7 border-amber-400 text-center md:text-left">
         <h2 className="text-4xl font-bold text-yellow-500 transition-colors duration-300 hover:text-yellow-400">
           About<span className="text-white">Me.</span>
         </h2>
@@ -36,7 +38,7 @@ const AboutMe: React.FC = () => {
         </p>
         <div className="flex justify-center md:justify-start">
           <a
-            href="mailto:andikaluhurpambudi@gmail.com"
+            href="#contact"
             className="rounded-lg bg-yellow-500 px-6 py-3 font-semibold text-white shadow-lg transition duration-300 hover:bg-yellow-600"
           >
             Contact Me

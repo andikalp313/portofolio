@@ -32,20 +32,12 @@ const Experience: React.FC = () => {
       description:
         "Completed a rigorous training program focusing on Japanese language (N4 level), culture, and physical challenges, preparing for professional life in Japan.",
     },
-    {
-      period: "2017",
-      title: "Trainee",
-      company: "elfi computer",
-      tools: "Sewing, Time Management, Customer Service",
-      description:
-        "Operated a small tailoring business, delivering high-quality work while managing client relationships and service delivery.",
-    },
   ];
 
   return (
     <div
       id="Experience"
-      className="bg-gray-900 object-cover px-4 py-16 text-center"
+      className="bg-gray-900 object-cover px-4 py-40 text-center md:px-40"
     >
       <h2 className="mb-6 text-3xl font-bold text-white">
         My <span className="text-yellow-400">Experiences</span>

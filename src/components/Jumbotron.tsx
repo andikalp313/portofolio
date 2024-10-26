@@ -1,14 +1,14 @@
 import React from "react";
-import { FaGithub } from "react-icons/fa6";
-
-import { FaLinkedin } from "react-icons/fa6";
-import { FaYoutube } from "react-icons/fa6";
-import { FaInstagram } from "react-icons/fa6";
+import { FaGithub, FaLinkedin, FaYoutube, FaInstagram } from "react-icons/fa6";
+import kereta from "../assets/kereta.jpeg";
 
 const Jumbotron: React.FC = () => {
   return (
-    <section id="Home" className="bg-gray-800 py-20 text-white">
-      <div className="container mx-auto grid grid-cols-1 items-center gap-8 md:grid-cols-2">
+    <section
+      id="Home"
+      className="bg-gray-800 px-4 py-10 text-white sm:px-4 md:px-4 md:py-24 lg:px-16"
+    >
+      <div className="container mx-auto grid grid-cols-1 items-center gap-20 md:grid-cols-2">
         {/* Text Section */}
         <div>
           <p className="text-yellow-500 transition-transform duration-300 ease-in-out hover:scale-110">
@@ -17,6 +17,7 @@ const Jumbotron: React.FC = () => {
           <h1 className="mb-4 text-5xl font-bold transition-colors duration-300 ease-in-out hover:text-yellow-500">
             I&apos;m Andika Luhur Pambudi
           </h1>
+
           <p className="mb-6 transition-opacity duration-300 ease-in-out hover:opacity-75">
             I'm a dedicated web developer with a background in construction and
             agriculture from my time in Japan. Fluent in Japanese, I returned to
@@ -24,9 +25,17 @@ const Jumbotron: React.FC = () => {
             web development skills. With a disciplined, adaptable mindset, I’m
             eager to create innovative digital solutions.
           </p>
-          <button className="transform rounded-full bg-yellow-500 px-6 py-2 text-black transition-transform duration-300 ease-in-out hover:scale-110 hover:bg-yellow-600">
-            Contact us
+          <button
+            onClick={() =>
+              document
+                .getElementById("contact")
+                ?.scrollIntoView({ behavior: "smooth" })
+            }
+            className="rounded-full bg-yellow-500 px-6 py-2 text-black transition-transform duration-300 ease-in-out hover:scale-110 hover:bg-yellow-600"
+          >
+            Hire Me
           </button>
+
           {/* Social Media Links */}
           <div className="mt-6 flex space-x-4">
             <a
@@ -35,10 +44,7 @@ const Jumbotron: React.FC = () => {
               rel="noopener noreferrer"
               className="transition-colors duration-300 ease-in-out hover:text-yellow-500"
             >
-              <i className="fab fa-linkedin fa-lg"></i>
-              <span className="ml-2">
-                <FaLinkedin />
-              </span>
+              <FaLinkedin size={24} />
             </a>
             <a
               href="https://www.youtube.com/@Sambatbahagiaa"
@@ -46,10 +52,7 @@ const Jumbotron: React.FC = () => {
               rel="noopener noreferrer"
               className="transition-colors duration-300 ease-in-out hover:text-yellow-500"
             >
-              <i className="fab fa-youtube fa-lg"></i>
-              <span className="ml-2">
-                <FaYoutube />
-              </span>
+              <FaYoutube size={24} />
             </a>
             <a
               href="https://www.instagram.com/andikalp_"
@@ -57,10 +60,7 @@ const Jumbotron: React.FC = () => {
               rel="noopener noreferrer"
               className="transition-colors duration-300 ease-in-out hover:text-yellow-500"
             >
-              <i className="fab fa-instagram fa-lg"></i>
-              <span className="ml-2">
-                <FaInstagram />
-              </span>
+              <FaInstagram size={24} />
             </a>
             <a
               href="https://github.com/andikalp313"
@@ -68,20 +68,17 @@ const Jumbotron: React.FC = () => {
               rel="noopener noreferrer"
               className="transition-colors duration-300 ease-in-out hover:text-yellow-500"
             >
-              <i className="fab fa-git fa-lg"></i>
-              <span className="ml-2">
-                <FaGithub />
-              </span>
+              <FaGithub size={24} />
             </a>
           </div>
         </div>
 
         {/* Image Section */}
-        <div className="flex justify-center">
+        <div className="relative h-80 w-full overflow-hidden rounded-2xl shadow-lg md:h-[500px]">
           <img
-            src="https://media.licdn.com/dms/image/v2/D5603AQGz1V0g-qozKA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1729315685428?e=1735171200&v=beta&t=NZeWwShxaAMSx54wekltYdaN3Ktfsk51RNh5vBsa1ow"
-            alt="Profile Anderson Coper"
-            className="rounded-xl transition-transform duration-300 ease-in-out hover:scale-105"
+            src={kereta}
+            alt="Background Banner"
+            className="absolute inset-0 h-full w-full rounded-xl object-cover transition-transform duration-300 ease-in-out hover:scale-105"
           />
         </div>
       </div>

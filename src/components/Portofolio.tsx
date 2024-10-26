@@ -26,43 +26,22 @@ const Portfolio: React.FC = () => {
       image: "https://via.placeholder.com/300", // Replace with actual image
       alt: "Portfolio Website",
     },
-    {
-      title: "API Development for Social Media App",
-      description:
-        "Developed a REST API with authentication, user posts, and file uploads for a social media application.",
-      techStack: ["Node.js", "Express", "MongoDB", "JWT"],
-      image: "https://via.placeholder.com/300", // Replace with actual image
-      alt: "API Development",
-    },
-    {
-      title: "Dashboard for Data Visualization",
-      description:
-        "Created a dynamic data visualization dashboard using D3.js, allowing users to interact with large datasets in real-time.",
-      techStack: ["D3.js", "React", "Redux"],
-      image: "https://via.placeholder.com/300", // Replace with actual image
-      alt: "Data Visualization Dashboard",
-    },
-    {
-      title: "Dashboard for Data Visualization",
-      description:
-        "Created a dynamic data visualization dashboard using D3.js, allowing users to interact with large datasets in real-time.",
-      techStack: ["D3.js", "React", "Redux"],
-      image: "https://via.placeholder.com/300", // Replace with actual image
-      alt: "Data Visualization Dashboard",
-    },
   ];
 
   return (
-    <div id="Portofolio" className="bg-gray-800 px-4 py-16 text-center">
+    <div
+      id="Portofolio"
+      className="bg-gray-800 px-4 py-20 text-center md:px-40"
+    >
       <h2 className="mb-6 text-3xl font-bold text-white">
         My <span className="text-yellow-500">Portfolio</span>
       </h2>
-      <p className="mb-12 text-gray-400">
+      <p className="mb-11 text-gray-400">
         A collection of web development projects showcasing my technical skills
         and creativity.
       </p>
 
-      <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="grid grid-cols-1 items-center gap-8 sm:grid-cols-2 lg:grid-cols-3">
         {portfolioItems.map((item, index) => (
           <div
             key={index}

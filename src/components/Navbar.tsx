@@ -33,10 +33,10 @@ const Navbar: React.FC = () => {
             ABOUT
           </a>
           <a
-            href="#"
+            href="#contact"
             className="transition-transform duration-300 ease-in-out hover:scale-110 hover:text-yellow-500"
           >
-            SERVICE
+            CONTACT
           </a>
           <a
             href="#Portofolio"
@@ -57,10 +57,10 @@ const Navbar: React.FC = () => {
             EXPERIENCE
           </a>
           <a
-            href=""
+            href="https://wa.me/+6282178342897"
             className="transition-transform duration-300 ease-in-out hover:scale-110 hover:text-yellow-500"
           >
-            CONTACT
+            HELP
           </a>
         </div>
 
@@ -75,15 +75,15 @@ const Navbar: React.FC = () => {
 
       {/* Dropdown Menu (Mobile) */}
       {isOpen && (
-        <div className="space-y-4 bg-gray-800 p-4 text-white md:hidden">
+        <div className="h-screen space-y-4 bg-gray-800 p-4 text-white md:hidden">
           <a href="#Home" className="block hover:text-yellow-500">
             HOME
           </a>
           <a href="#AboutMe" className="block hover:text-yellow-500">
             ABOUT
           </a>
-          <a href="#" className="block hover:text-yellow-500">
-            SERVICE
+          <a href="#contact" className="block hover:text-yellow-500">
+            CONTACT
           </a>
           <a href="#Portofolio" className="block hover:text-yellow-500">
             PORTFOLIO
@@ -94,8 +94,11 @@ const Navbar: React.FC = () => {
           <a href="#Experience" className="block hover:text-yellow-500">
             EXPERIENCE
           </a>
-          <a href="#" className="block hover:text-yellow-500">
-            CONTACT
+          <a
+            href="https://wa.me/+6282178342897"
+            className="block hover:text-yellow-500"
+          >
+            HELP
           </a>
         </div>
       )}
