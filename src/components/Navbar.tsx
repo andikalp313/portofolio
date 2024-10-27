@@ -9,7 +9,7 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <nav className="sticky top-0 z-10 bg-gray-900 py-4">
+    <nav className="sticky top-0 z-20 bg-gray-900 py-4">
       <div className="container mx-auto flex items-center justify-between">
         {/* Logo */}
         <div className="text-2xl font-bold text-yellow-500">

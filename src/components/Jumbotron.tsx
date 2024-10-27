@@ -1,5 +1,7 @@
 import React from "react";
 import { FaGithub, FaLinkedin, FaYoutube, FaInstagram } from "react-icons/fa6";
+import { cn } from "../lib/utils";
+import { BackgroundGradient } from "./ui/background-gradient"; // Pastikan path-nya benar
 import kereta from "../assets/kereta.jpeg";
 
 const Jumbotron: React.FC = () => {
@@ -73,14 +75,19 @@ const Jumbotron: React.FC = () => {
           </div>
         </div>
 
-        {/* Image Section */}
-        <div className="relative h-80 w-full overflow-hidden rounded-2xl shadow-lg md:h-[500px]">
-          <img
-            src={kereta}
-            alt="Background Banner"
-            className="absolute inset-0 h-full w-full rounded-xl object-cover transition-transform duration-300 ease-in-out hover:scale-105"
-          />
-        </div>
+        {/* Image Section with BackgroundGradient */}
+        <BackgroundGradient containerClassName="relative h-80 w-full md:h-[500px]">
+          <div className="relative z-10 h-80 w-full md:h-[492px]">
+            <img
+              src={kereta}
+              alt="Background Banner"
+              className={cn(
+                "inset-0 h-full w-full object-cover transition-transform duration-300 ease-in-out",
+                "rounded-3xl hover:scale-105",
+              )}
+            />
+          </div>
+        </BackgroundGradient>
       </div>
     </section>
   );

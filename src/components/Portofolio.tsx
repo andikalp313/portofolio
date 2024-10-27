@@ -41,7 +41,7 @@ const Portfolio: React.FC = () => {
         and creativity.
       </p>
 
-      <div className="grid grid-cols-1 items-center gap-8 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="md: grid grid-cols-1 items-center gap-8 sm:grid-cols-2 lg:grid-cols-3">
         {portfolioItems.map((item, index) => (
           <div
             key={index}

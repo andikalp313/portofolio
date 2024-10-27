@@ -27,18 +27,17 @@ const ContactForm: React.FC = () => {
 
   return (
     <section id="contact" className="bg-gray-900 py-10 text-white">
-      <div className="container mx-auto px-4 sm:px-8 md:px-16 lg:px-24">
-        <h2 className="mb-4 text-center text-3xl font-bold text-yellow-500">
-          Contact <span className="text-white">Me</span>
-        </h2>
-        <p className="mb-8 text-center text-gray-400">
-          Have questions or want to collaborate? Contact me via email or
-          WhatsApp
-        </p>
-
+      <div className="container mx-auto my-11 px-4 sm:px-8 md:px-16 lg:px-24">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
           {/* Bagian Informasi Kontak */}
           <div className="space-y-4 text-gray-400">
+            <h2 className="mb-4 text-3xl font-bold text-yellow-500">
+              Contact <span className="text-white">Me</span>
+            </h2>
+            <p className="mb-8 text-gray-400">
+              Have questions or want to collaborate? Contact me via email or
+              WhatsApp
+            </p>
             <p>
               <span className="font-bold text-white">address: </span>Weru,
               Sukoharjo, Jawa Tengah, Indonesia

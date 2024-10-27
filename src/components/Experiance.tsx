@@ -24,20 +24,12 @@ const Experience: React.FC = () => {
       description:
         "Assisted with day-to-day farming operations, including handling livestock and managing crops, while adapting to the rural agricultural environment in Japan.",
     },
-    {
-      period: "2019 - 2020",
-      title: "Trainee",
-      company: "LPK Bangkit Indonesia",
-      tools: "Language & Cultural Training, Physical Endurance",
-      description:
-        "Completed a rigorous training program focusing on Japanese language (N4 level), culture, and physical challenges, preparing for professional life in Japan.",
-    },
   ];
 
   return (
     <div
       id="Experience"
-      className="bg-gray-900 object-cover px-4 py-40 text-center md:px-40"
+      className="bg-gray-800 object-cover px-4 text-center md:mb-20 md:px-40 md:py-40"
     >
       <h2 className="mb-6 text-3xl font-bold text-white">
         My <span className="text-yellow-400">Experiences</span>
@@ -51,7 +43,7 @@ const Experience: React.FC = () => {
         {experiences.map((experience, index) => (
           <div
             key={index}
-            className="overflow-hidden rounded-lg bg-gray-800 p-6 shadow-lg transition-shadow duration-300 hover:shadow-xl"
+            className="overflow-hidden rounded-lg bg-gray-900 p-6 shadow-lg transition-shadow duration-300 hover:shadow-xl"
           >
             <h3 className="mb-2 text-xl font-semibold text-yellow-400">
               {experience.title}

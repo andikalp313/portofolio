@@ -10,7 +10,7 @@ import { BackgroundGradient } from "./components/ui/background-gradient";
 
 function App() {
   return (
-    <section className="">
+    <section className="bg-slate-800">
       <>
         <Navbar />
         <Jumbotron />

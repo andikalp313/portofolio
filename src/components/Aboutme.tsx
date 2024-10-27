@@ -1,19 +1,26 @@
 import konstruksi from "../assets/konstruksi.jpeg";
+import { cn } from "../lib/utils";
+import { BackgroundGradient } from "./ui/background-gradient";
 
 const AboutMe: React.FC = () => {
   return (
     <div
       id="AboutMe"
-      className="lg:px-25 md:py-25 grid grid-cols-1 gap-20 bg-gray-800 px-4 py-40 text-white md:grid-cols-2 md:px-40"
+      className="lg:px-25 grid grid-cols-1 gap-20 bg-gray-800 px-4 text-white md:grid-cols-2 md:px-40 md:py-24"
     >
-      {/* Image Section */}
-      <div className="relative h-80 w-full overflow-hidden rounded-2xl shadow-lg md:h-[500px]">
-        <img
-          src={konstruksi}
-          alt="Background Banner"
-          className="absolute inset-0 h-full w-full rounded-xl object-cover transition-transform duration-300 ease-in-out hover:scale-105"
-        />
-      </div>
+      {/* Image Section with BackgroundGradient */}
+      <BackgroundGradient containerClassName="relative h-80 w-full md:h-[500px]">
+        <div className="relative z-10 h-80 w-full md:h-[492px]">
+          <img
+            src={konstruksi}
+            alt="Background Banner"
+            className={cn(
+              "inset-0 h-full w-full object-cover transition-transform duration-300 ease-in-out",
+              "rounded-3xl hover:scale-105",
+            )}
+          />
+        </div>
+      </BackgroundGradient>
 
       {/* Content Section */}
       <div className="flex border-collapse flex-col gap-7 border-amber-400 text-center md:text-left">
