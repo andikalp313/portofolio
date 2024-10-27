@@ -18,9 +18,11 @@ function App() {
         <Skills />
         <Portfolio />
         <Experience />
-        <Form />
-        <Footer />
-        <BackgroundGradient />
+        <div className="pt-5">
+          <BackgroundGradient />
+          <Form />
+          <Footer />
+        </div>
       </>
     </section>
   );

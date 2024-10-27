@@ -1,3 +1,5 @@
+import { BackgroundGradient } from "./ui/background-gradient";
+
 const Experience: React.FC = () => {
   const experiences = [
     {
@@ -22,7 +24,7 @@ const Experience: React.FC = () => {
       company: "Jet Farm, Japan",
       tools: "Japanese Language (N4), Farm Equipment, Livestock Management",
       description:
-        "Assisted with day-to-day farming operations, including handling livestock and managing crops, while adapting to the rural agricultural environment in Japan.",
+        "Assisted with day-to-day farming operations, while adapting to the rural agricultural environment in Japan.",
     },
   ];
 
@@ -41,21 +43,23 @@ const Experience: React.FC = () => {
 
       <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
         {experiences.map((experience, index) => (
-          <div
-            key={index}
-            className="overflow-hidden rounded-lg bg-gray-900 p-6 shadow-lg transition-shadow duration-300 hover:shadow-xl"
-          >
-            <h3 className="mb-2 text-xl font-semibold text-yellow-400">
-              {experience.title}
-            </h3>
-            <h4 className="mb-2 text-gray-400">{experience.company}</h4>
-            <p className="mb-4 italic text-gray-500">{experience.period}</p>
-            <p className="mb-4 text-gray-400">{experience.description}</p>
-            <p className="text-gray-500">
-              <span className="font-semibold">Tools: </span>
-              {experience.tools}
-            </p>
-          </div>
+          <BackgroundGradient className="pt-5">
+            <div
+              key={index}
+              className="overflow-hidden rounded-3xl bg-gray-900 p-6 shadow-lg transition-shadow duration-300 hover:shadow-xl"
+            >
+              <h3 className="mb-2 text-xl font-semibold text-yellow-400">
+                {experience.title}
+              </h3>
+              <h4 className="mb-2 text-gray-400">{experience.company}</h4>
+              <p className="mb-4 italic text-gray-500">{experience.period}</p>
+              <p className="mb-4 text-gray-400">{experience.description}</p>
+              <p className="text-gray-500">
+                <span className="font-semibold">Tools: </span>
+                {experience.tools}
+              </p>
+            </div>
+          </BackgroundGradient>
         ))}
       </div>
     </div>

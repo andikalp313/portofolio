@@ -1,4 +1,7 @@
 import gambar1 from "../assets/website.png";
+import { BackgroundGradient } from "./ui/background-gradient";
+import gambar2 from "../assets/chat.png";
+import gambar3 from "../assets/portofolio.png";
 
 const Portfolio: React.FC = () => {
   const portfolioItems = [
@@ -7,7 +10,7 @@ const Portfolio: React.FC = () => {
       description:
         "Developed a fully responsive e-commerce platform using React and Tailwind CSS, with dynamic product listings and a custom shopping cart.",
       techStack: ["React", "Tailwind CSS", "Node.js", "MongoDB"],
-      image: { gambar1 }, // Replace with actual image
+      image: gambar1,
       alt: "Responsive Web Application",
     },
     {
@@ -15,7 +18,7 @@ const Portfolio: React.FC = () => {
       description:
         "Built a real-time chat app with WebSocket and TypeScript for seamless, instant messaging across multiple devices.",
       techStack: ["TypeScript", "WebSocket", "Node.js", "Express"],
-      image: "https://via.placeholder.com/300", // Replace with actual image
+      image: gambar2,
       alt: "Real-time Chat Application",
     },
     {
@@ -23,7 +26,7 @@ const Portfolio: React.FC = () => {
       description:
         "Designed and developed my personal portfolio to showcase projects and skills, with a clean UI built using Next.js and styled-components.",
       techStack: ["Next.js", "Styled-Components", "JavaScript"],
-      image: "https://via.placeholder.com/300", // Replace with actual image
+      image: gambar3,
       alt: "Portfolio Website",
     },
   ];
@@ -41,34 +44,36 @@ const Portfolio: React.FC = () => {
         and creativity.
       </p>
 
-      <div className="md: grid grid-cols-1 items-center gap-8 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="grid grid-cols-1 items-center gap-8 sm:grid-cols-2 lg:grid-cols-3">
         {portfolioItems.map((item, index) => (
-          <div
-            key={index}
-            className="overflow-hidden rounded-lg bg-gray-800 shadow-lg transition-shadow duration-300 hover:shadow-xl"
-          >
-            <img
-              src={gambar1}
-              alt={item.alt}
-              className="h-56 w-full object-cover"
-            />
-            <div className="p-4">
-              <h3 className="mb-2 text-xl font-semibold text-white">
-                {item.title}
-              </h3>
-              <p className="mb-4 text-gray-400">{item.description}</p>
-              <div className="flex flex-wrap gap-2">
-                {item.techStack.map((tech, i) => (
-                  <span
-                    key={i}
-                    className="inline-block rounded bg-yellow-500 px-2 py-1 text-xs text-black"
-                  >
-                    {tech}
-                  </span>
-                ))}
+          <BackgroundGradient className="pt-5">
+            <div
+              key={index}
+              className="overflow-hidden rounded-3xl bg-gray-800 shadow-lg transition-shadow duration-300 hover:shadow-xl"
+            >
+              <img
+                src={item.image}
+                alt={item.alt}
+                className="h-56 w-full object-contain pt-11"
+              />
+              <div className="p-4">
+                <h3 className="mb-2 text-xl font-semibold text-white">
+                  {item.title}
+                </h3>
+                <p className="mb-4 text-gray-400">{item.description}</p>
+                <div className="flex flex-wrap gap-2">
+                  {item.techStack.map((tech, i) => (
+                    <span
+                      key={i}
+                      className="inline-block rounded bg-yellow-500 px-2 py-1 text-xs text-black"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
               </div>
             </div>
-          </div>
+          </BackgroundGradient>
         ))}
       </div>
     </div>
