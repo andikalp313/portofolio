@@ -37,7 +37,10 @@ const Portfolio: React.FC = () => {
       className="bg-gray-800 px-4 py-20 text-center md:px-40"
     >
       <h2 className="mb-6 text-3xl font-bold text-white">
-        My <span className="text-yellow-500">Portfolio</span>
+        My{" "}
+        <span className="text-blue-500 hover:text-yellow-400 dark:text-blue-500">
+          Portfolio
+        </span>
       </h2>
       <p className="mb-11 text-gray-400">
         A collection of web development projects showcasing my technical skills

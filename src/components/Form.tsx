@@ -31,7 +31,7 @@ const ContactForm: React.FC = () => {
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
           {/* Bagian Informasi Kontak */}
           <div className="space-y-4 text-gray-400">
-            <h2 className="mb-4 text-3xl font-bold text-yellow-500">
+            <h2 className="mb-4 text-3xl font-bold text-blue-500 hover:text-yellow-400 dark:text-blue-500">
               Contact <span className="text-white">Me</span>
             </h2>
             <p className="mb-8 text-gray-400">

@@ -49,7 +49,10 @@ const Skills: React.FC = () => {
           className="gap-36 rounded-3xl bg-gray-800 px-4 text-center md:px-36 md:py-16"
         >
           <h2 className="mb-6 text-3xl font-bold text-white">
-            My <span className="text-yellow-400">Skills</span>
+            My{" "}
+            <span className="text-blue-500 hover:text-yellow-400 dark:text-blue-500">
+              Skills
+            </span>
           </h2>
           <p className="mb-12 text-gray-400">
             A collection of skills I have developed through my experiences and

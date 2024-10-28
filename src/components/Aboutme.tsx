@@ -24,7 +24,7 @@ const AboutMe: React.FC = () => {
 
       {/* Content Section */}
       <div className="flex border-collapse flex-col gap-7 border-amber-400 text-center md:text-left">
-        <h2 className="text-4xl font-bold text-yellow-500 transition-colors duration-300 hover:text-yellow-400">
+        <h2 className="text-4xl font-bold text-blue-500 transition-colors duration-300 hover:text-yellow-400 dark:text-blue-500">
           About<span className="text-white">Me.</span>
         </h2>
 

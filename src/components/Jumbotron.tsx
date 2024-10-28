@@ -3,8 +3,24 @@ import { FaGithub, FaLinkedin, FaYoutube, FaInstagram } from "react-icons/fa6";
 import { cn } from "../lib/utils";
 import { BackgroundGradient } from "./ui/background-gradient"; // Pastikan path-nya benar
 import kereta from "../assets/kereta.jpeg";
+import { TypewriterEffect } from "../components/ui/typewriter-effect";
 
 const Jumbotron: React.FC = () => {
+  const words = [
+    { text: "Hello," },
+    {
+      text: "Welcome",
+      className: "text-blue-500 dark:text-blue-500 hover:text-yellow-500",
+    },
+    { text: "Everyone!!!!" },
+    { text: "I'm" },
+    { text: "Andika" },
+    { text: "Luhur" },
+    {
+      text: "Pambudi.",
+      className: "text-blue-500 dark:text-blue-500 hover:text-yellow-500",
+    },
+  ];
   return (
     <section
       id="Home"
@@ -13,13 +29,7 @@ const Jumbotron: React.FC = () => {
       <div className="container mx-auto grid grid-cols-1 items-center gap-20 md:grid-cols-2">
         {/* Text Section */}
         <div>
-          <p className="text-yellow-500 transition-transform duration-300 ease-in-out hover:scale-110">
-            Hello, Welcome
-          </p>
-          <h1 className="mb-4 text-5xl font-bold transition-colors duration-300 ease-in-out hover:text-yellow-500">
-            I&apos;m Andika Luhur Pambudi
-          </h1>
-
+          <TypewriterEffect words={words} className="mb-7 text-left" />{" "}
           <p className="mb-6 transition-opacity duration-300 ease-in-out hover:opacity-75">
             I'm a dedicated web developer with a background in construction and
             agriculture from my time in Japan. Fluent in Japanese, I returned to
@@ -37,7 +47,6 @@ const Jumbotron: React.FC = () => {
           >
             Hire Me
           </button>
-
           {/* Social Media Links */}
           <div className="mt-6 flex space-x-4">
             <a

@@ -34,7 +34,10 @@ const Experience: React.FC = () => {
       className="bg-gray-800 object-cover px-4 text-center md:mb-20 md:px-40 md:py-40"
     >
       <h2 className="mb-6 text-3xl font-bold text-white">
-        My <span className="text-yellow-400">Experiences</span>
+        My{" "}
+        <span className="text-blue-500 hover:text-yellow-400 dark:text-blue-500">
+          Experiences
+        </span>
       </h2>
       <p className="mb-12 text-gray-400">
         A summary of my professional journey and the skills I’ve developed along

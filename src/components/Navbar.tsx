@@ -12,7 +12,7 @@ const Navbar: React.FC = () => {
     <nav className="sticky top-0 z-20 bg-gray-900 py-4">
       <div className="container mx-auto flex items-center justify-between">
         {/* Logo */}
-        <div className="text-2xl font-bold text-yellow-500">
+        <div className="text-2xl font-bold text-blue-500 hover:text-yellow-400 dark:text-blue-500">
           <a href="#">
             About<span className="text-white">Me.</span>
           </a>
@@ -20,45 +20,30 @@ const Navbar: React.FC = () => {
 
         {/* Menu (Desktop) */}
         <div className="hidden space-x-8 text-white md:flex">
-          <a
-            href="#Home"
-            className="transition-transform duration-300 ease-in-out hover:scale-110 hover:text-yellow-500"
-          >
+          <a href="#Home" className="hover:scale-110 hover:text-blue-500">
             HOME
           </a>
-          <a
-            href="#AboutMe"
-            className="transition-transform duration-300 ease-in-out hover:scale-110 hover:text-yellow-500"
-          >
+          <a href="#AboutMe" className="hover:scale-110 hover:text-blue-500">
             ABOUT
           </a>
-          <a
-            href="#contact"
-            className="transition-transform duration-300 ease-in-out hover:scale-110 hover:text-yellow-500"
-          >
+          <a href="#contact" className="hover:scale-110 hover:text-blue-500">
             CONTACT
           </a>
-          <a
-            href="#Portofolio"
-            className="transition-transform duration-300 ease-in-out hover:scale-110 hover:text-yellow-500"
-          >
+          <a href="#Portofolio" className="hover:scale-110 hover:text-blue-500">
             PORTFOLIO
           </a>
-          <a
-            href="#Skills"
-            className="transition-transform duration-300 ease-in-out hover:scale-110 hover:text-yellow-500"
-          >
+          <a href="#Skills" className="hover:scale-110 hover:text-blue-500">
             SKILLS
           </a>
           <a
             href="#Experience"
-            className="transition-transform duration-300 ease-in-out hover:scale-110 hover:text-yellow-500"
+            className="transition-transform duration-300 ease-in-out hover:scale-110 hover:text-blue-500"
           >
             EXPERIENCE
           </a>
           <a
             href="https://wa.me/+6282178342897"
-            className="transition-transform duration-300 ease-in-out hover:scale-110 hover:text-yellow-500"
+            className="transition-transform duration-300 ease-in-out hover:scale-110 hover:text-blue-500"
           >
             HELP
           </a>
