@@ -19,7 +19,6 @@ function App() {
         <Portfolio />
         <Experience />
         <div className="pt-5">
-          <BackgroundGradient />
           <Form />
           <Footer />
         </div>
