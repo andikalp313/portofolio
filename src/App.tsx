@@ -6,7 +6,6 @@ import Jumbotron from "./components/Jumbotron";
 import Navbar from "./components/Navbar";
 import Portfolio from "./components/Portofolio";
 import Skills from "./components/Skils";
-import { BackgroundGradient } from "./components/ui/background-gradient";
 
 function App() {
   return (
